@@ -10,38 +10,36 @@
             background-color: #f4f4f8;
             color: #333;
             margin: 0;
-            padding: 10px; /* 页面周围的填充 */
+            padding: 10px; /* added padding around the entire page */
             display: flex;
             justify-content: center;
-            align-items: flex-start; /* 从中心改为顶部对齐 */
+            align-items: flex-start; /* changed from center to flex-start to align the content to the top */
             min-height: 100vh;
-            width: 100%; /* 确保 body 占满整个宽度 */
+            width: 100%; /* ensure the body takes full width */
         }
         .container {
             background: #fff;
-            padding: 20px 40px; /* 增加内部间距以提供更好的间距 */
+            padding: 20px 40px; /* increased padding for better spacing inside the container */
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            width: 50%; /* 将容器宽度设置为视图宽度的50% */
-            max-width: 600px; /* 最大宽度设置为600px */
-            min-width: 320px; /* 最小宽度设置为320px，确保在小屏幕上的可用性 */
+            width: 100%; /* responsive width */
+            max-width: 960px; /* increased max width for larger displays */
         }
         h2 {
             color: #333;
             text-align: center;
         }
         input[type="number"], #amountInputs p {
-            width: 100%; /* 使输入字段占据其父容器的全部宽度 */
-            box-sizing: border-box; /* 包括在元素的总宽度和高度中的填充和边框 */
+            width: 100%; /* Make input fields take the full width of their parent */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
         }
         input[type="number"] {
             padding: 8px;
-            margin: 5px 0;
+            margin: 5px 0 5px 0;
             border: 1px solid #ccc;
             border-radius: 4px;
             display: block;
         }
-
         button {
             width: 100%;
             padding: 10px;
