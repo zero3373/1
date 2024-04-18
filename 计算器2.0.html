@@ -86,14 +86,12 @@
                 alert("第一级被推荐人的数量不能超过9个。");
                 return;
             }
-          
             let newInputs = `<p>
                 <input type="number" placeholder="第一级被推荐人消费金额" id="amountInput${index}">
                 <input type="number" placeholder="第二级被推荐人数量" id="numSecondLevelInput${index}">
             </p>`;
             amountInputs.innerHTML += newInputs;
         }
-        
         function calculateRebate() {
             let totalRebate = 0;
             let totalAmountSpent = 0;
